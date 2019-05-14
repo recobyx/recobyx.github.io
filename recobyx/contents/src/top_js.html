@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>source code</title>
+  </head>
+  <body>
+    <h1>Here is the code of [top.js]</h1>
+    <hr>
+    <div style="margin:50px;">
+      <code>
+      <ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
+      <li style="background-color:#EFF;">(function() {</li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;//init setting</li>
+      <li style="background-color:#EFF;">&nbsp;&nbsp;addBarAction(<font style="color:brown;">"tree"</font>, [<font style="color:brown;">'&gt;'</font>,<font style="color:brown;">'&lt;'</font>]);</li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;addBarAction(<font style="color:brown;">"content"</font>, [<font style="color:brown;">'&lt;'</font>,<font style="color:brown;">'&gt;'</font>]);</li>
+      <li style="background-color:#EFF;">})();</li>
+      <li style="background-color:#EEF;"></li>
+      <li style="background-color:#EFF;">function addBarAction(name, signs) {</li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;document.getElementById(<font style="color:brown;">'nob_'</font>+ name).setAttribute(<font style="color:brown;">'sign'</font>, signs[0]);</li>
+      <li style="background-color:#EFF;"></li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;let bar = document.getElementById(<font style="color:brown;">'bar_'</font>+ name);</li>
+      <li style="background-color:#EFF;">&nbsp;&nbsp;bar.addEventListener(<font style="color:brown;">'click'</font>, function(e) {</li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;let pane = document.getElementById(name + <font style="color:brown;">'_pane'</font>);</li>
+      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;if (pane.clientWidth &gt; 0) {</li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;changeAround(name, pane, <font style="color:brown;">'none'</font>, signs[1]);</li>
+      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;}</li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;else {</li>
+      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;changeAround(name, pane, <font style="color:brown;">'flex'</font>, signs[0]);</li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;}</li>
+      <li style="background-color:#EFF;">&nbsp;&nbsp;}, false);</li>
+      <li style="background-color:#EEF;">}</li>
+      <li style="background-color:#EFF;"></li>
+      <li style="background-color:#EEF;">function changeAround(name, pane, mode, sign) {</li>
+      <li style="background-color:#EFF;">&nbsp;&nbsp;pane.style.display = mode;</li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;document.getElementById(<font style="color:brown;">'nob_'</font>+ name).setAttribute(<font style="color:brown;">'sign'</font>, sign);</li>
+      <li style="background-color:#EFF;">&nbsp;&nbsp;document.getElementById(<font style="color:brown;">'bar_'</font> + (name == <font style="color:brown;">'tree'</font> ? <font style="color:brown;">'content'</font> : <font style="color:brown;">'tree'</font>)).style.display = mode;</li>
+      <li style="background-color:#EEF;">}</li>
+      <li style="background-color:#EFF;"></li>
+      </ol></code>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Side tree</title>
+    <link rel="stylesheet" href="css/side_tree.css">
+  </head>
+  <body>
+    <div id="tree">
+      <input type="checkbox" class="sensor" id="root">
+      <label for="root" class="text">root<span class="roller">@</span></label>
+      <ul class="accordion">
+        <li><a href="javascript:void(0)" class="text" id="contents/welcome">welcome.html</a></li>
+        <li>
+          <input type="checkbox" class="sensor" id="src">
+          <label for="src" class="text">source code...<span class="roller">@</span></label>
+          <ul class="accordion">
+            <li><a href="javascript:void(0)" class="text" id="contents/src/top">top.html</a></li>
+            <li><a href="javascript:void(0)" class="text" id="contents/src/side_tree">side_tree.html</a></li>
+            <li>
+              <input type="checkbox" class="sensor" id="src_contents">
+              <label for="src_contents" class="text">contents<span class="roller">@</span></label>
+              <ul class="accordion">
+                <li><a href="javascript:void(0)" class="text" id="contents/src/welcome">welcome.html</a></li>
+              </ul>
+            </li>
+            <li>
+              <input type="checkbox" class="sensor" id="src_css">
+              <label for="src_css" class="text">css<span class="roller">@</span></label>
+              <ul class="accordion">
+                <li><a href="javascript:void(0)" class="text" id="contents/src/top_css">top.css</a></li>
+                <li><a href="javascript:void(0)" class="text" id="contents/src/side_tree_css">side_tree.css</a></li>
+              </ul>
+            </li>
+            <li>
+              <input type="checkbox" class="sensor" id="src_js">
+              <label for="src_js" class="text">javascript<span class="roller">@</span></label>
+              <ul class="accordion">
+                <li><a href="javascript:void(0)" class="text" id="contents/src/top_js">top.js</a></li>
+                <li><a href="javascript:void(0)" class="text" id="contents/src/side_tree_js">side_tree.js</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <input type="checkbox" class="sensor" id="learned_about">
+          <label for="learned_about" class="text">I've learned about...<span class="roller">@</span></label>
+          <ul class="accordion">
+            <li>
+              <input type="checkbox" class="sensor" id="about_html">
+              <label for="about_html" class="text">html<span class="roller">@</span></label>
+              <ul class="accordion">
+                <li>
+                  <input type="checkbox" class="sensor" id="about_iframe">
+                  <label for="about_iframe" class="text">iframe<span class="roller">@</span></label>
+                  <ul class="accordion">
+                    <li><a href="javascript:void(0)" class="text" id="contents/src/top">//[style='border:none;'] as attr of tag.</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <input type="checkbox" class="sensor" id="about_css">
+              <label for="about_css" class="text">css<span class="roller">@</span></label>
+              <ul class="accordion">
+                <li>
+                  <input type="checkbox" class="sensor" id="about_vw-vh">
+                  <label for="about_vw-vh" class="text">vw, vh...<span class="roller">@</span></label>
+                  <ul class="accordion">
+                    <li><a href="javascript:void(0)" class="text" id="contents/src/top_css">//viewport-[width,height]</a></li>
+                  </ul>
+                </li>
+                <li><a href="javascript:void(0)" class="text" id="contents/src/top_css">calc()</a></li>
+                <li><a href="javascript:void(0)" class="text" id="contents/src/top_css">attr()</a></li>
+                <li>
+                  <input type="checkbox" class="sensor" id="about_z-index">
+                  <label for="about_z-index" class="text">z-index...<span class="roller">@</span></label>
+                  <ul class="accordion">
+                    <li><a href="javascript:void(0)" class="text" id="contents/src/top_css">//except [position:static;]</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <input type="checkbox" class="sensor" id="about_flexbox">
+                  <label for="about_flexbox" class="text">flexbox<span class="roller">@</span></label>
+                  <ul class="accordion">
+                    <li>
+                      <input type="checkbox" class="sensor" id="about_center-of-parent">
+                      <label for="about_center-of-parent" class="text">the center of parent...<span class="roller">@</span></label>
+                      <ul class="accordion">
+                        <li><a href="javascript:void(0)" class="text" id="contents/src/top_css">justify-content: center;<br>
+                        align-items: center;</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <input type="checkbox" class="sensor" id="about_animation">
+                  <label for="about_animation" class="text">animation<span class="roller">@</span></label>
+                  <ul class="accordion">
+                    <li>
+                      <input type="checkbox" class="sensor" id="about_for-flex">
+                      <label for="about_for-flex" class="text">for flex...<span class="roller">@</span></label>
+                      <ul class="accordion">
+                        <li><a href="javascript:void(0)" class="text" id="contents/src/top_css">//keyframes 0%, 1%, 100%</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <input type="checkbox" class="sensor" id="about_accordion-menu">
+                  <label for="about_accordion-menu" class="text">accordion menu...<span class="roller">@</span></label>
+                  <ul class="accordion">
+                    <li><a href="javascript:void(0)" class="text" id="contents/src/side_tree_css">//input + label + ul </a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <input type="checkbox" class="sensor" id="about_javascript">
+              <label for="about_javascript" class="text">javascript<span class="roller">@</span></label>
+              <ul class="accordion">
+                <li>
+                  <input type="checkbox" class="sensor" id="change_css-attr">
+                  <label for="change_css-attr" class="text">change css-Attribute...<span class="roller">@</span></label>
+                  <ul class="accordion">
+                    <li><a href="javascript:void(0)" class="text" id="contents/src/top_js">obj.setAttribute('k','v');<br>
+                    //then, use attr(k) in css.</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <input type="checkbox" class="sensor" id="get_outer-doc">
+                  <label for="get_outer-doc" class="text">get outer-doc from iframe(inner-doc)...<span class="roller">@</span></label>
+                  <ul class="accordion">
+                    <li><a href="javascript:void(0)" class="text" id="contents/src/side_tree_js">window.parent.document;</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <script type="text/javascript" src="js/side_tree.js"></script>
+  </body>
+</html>

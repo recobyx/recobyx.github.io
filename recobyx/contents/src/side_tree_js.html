@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>source code</title>
+  </head>
+  <body>
+    <h1>Here is the code of [side_tree.js]</h1>
+    <hr>
+    <div style="margin:50px;">
+      <code>
+      <ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
+      <li style="background-color:#EFF;">(function(){</li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;// console.log(<font style="color:brown;">"[side_tree.js] loading... "</font> + document.title);</li>
+      <li style="background-color:#EFF;"></li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;let anchors = document.getElementsByTagName(<font style="color:brown;">'a'</font>);</li>
+      <li style="background-color:#EFF;">&nbsp;&nbsp;for (let i = 0; i &lt; anchors.length; i++) {</li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;anchors[i].addEventListener(<font style="color:brown;">'click'</font>, function(e) {</li>
+      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let ifr = window.parent.document.getElementById(<font style="color:brown;">'content_iframe'</font>);</li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ifr.setAttribute(<font style="color:brown;">'src'</font>, e.target.id +<font style="color:brown;">'.html'</font>);</li>
+      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;}, false);</li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;}</li>
+      <li style="background-color:#EFF;"></li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;let rollers = document.getElementsByClassName(<font style="color:brown;">'roller'</font>);</li>
+      <li style="background-color:#EFF;">&nbsp;&nbsp;for (let i = 0; i &lt; rollers.length; i++) {</li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;rollers[i].addEventListener(<font style="color:brown;">'click'</font>, function(e) {</li>
+      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let parent = e.target.parentElement;</li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let sensor = parent.previousElementSibling;</li>
+      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;let subs = parent.nextElementSibling.getElementsByClassName(<font style="color:brown;">'sensor'</font>);</li>
+      <li style="background-color:#EEF;"></li>
+      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if (sensor.checked) {</li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (let j = 0; j &lt; subs.length; j++) {</li>
+      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;subs[j].checked = false;</li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</li>
+      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;else {</li>
+      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (let j = 0; j &lt; subs.length; j++) {</li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;subs[j].checked = true;</li>
+      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}</li>
+      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;}, false);</li>
+      <li style="background-color:#EEF;">&nbsp;&nbsp;}</li>
+      <li style="background-color:#EFF;">})();</li>
+      <li style="background-color:#EEF;"></li>
+      </ol></code>
+    </div>
+  </body>
+</html>
