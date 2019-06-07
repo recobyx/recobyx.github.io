@@ -3,162 +3,163 @@
   <head>
     <meta charset="utf-8">
     <title>source code</title>
+    <link rel="stylesheet" href="../../css/src.css">
   </head>
   <body>
     <h1>Here is the code of [top.css]</h1>
     <hr>
     <div style="margin:50px;">
       <code>
-      <ol style="list-style:decimal-leading-zero outside;in-left:0;padding-left:36px;margin:0;background-color:#EEF;color:#000;">
-      <li style="background-color:#EFF;">* {</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;margin: 0;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;padding: 0;</li>
-      <li style="background-color:#EEF;">}</li>
-      <li style="background-color:#EFF;">body {</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;display: flex;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;flex-direction: column;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;justify-content: space-between;</li>
-      <li style="background-color:#EFF;">}</li>
-      <li style="background-color:#EEF;">header, footer {</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;flex: 0 0 auto;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;height: 40px;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;background: #373533;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;color: silver;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;text-align: center;</li>
-      <li style="background-color:#EEF;"></li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;display: flex;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;justify-content: center;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;align-items: center;</li>
-      <li style="background-color:#EEF;">}</li>
-      <li style="background-color:#EFF;">#main {</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;flex: 1 0 auto;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;height: calc(100vh - 80px);</li>
-      <li style="background-color:#EEF;"></li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;/* flex for [tree_pane, content_pane] */</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;display: flex;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;flex-direction: row-reverse;</li>
-      <li style="background-color:#EEF;">}</li>
-      <li style="background-color:#EFF;">#tool_pane {</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;flex: 0 0 auto;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;width: 30px;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;background: #3d3c39;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;position: relative;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;z-index: 10;</li>
-      <li style="background-color:#EFF;">}</li>
-      <li style="background-color:#EEF;">#tree_pane {</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;flex: 1 0 auto;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;min-width: 200px;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;width: 20vw;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;background:  #c9472c;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;animation: tree_fadeIn 1s;</li>
-      <li style="background-color:#EEF;">}</li>
-      <li style="background-color:#EFF;">.bar {</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;flex: 0 0 auto;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;min-width: 6px;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;max-width: 6px;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;background: silver;</li>
-      <li style="background-color:#EEF;">}</li>
-      <li style="background-color:#EFF;">#bar_tree {</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;background: #12131f;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;border-right: 1px solid #12131f;</li>
-      <li style="background-color:#EEF;">}</li>
-      <li style="background-color:#EFF;">#bar_content {</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;background:  #c9472c;</li>
-      <li style="background-color:#EFF;">}</li>
-      <li style="background-color:#EEF;">.nob {</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;display: none;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;background: black;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;color: silver;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;width: 25px;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;height: 40px;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;top: 45%;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;opacity: .6;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;position: relative;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;z-index: 1;</li>
-      <li style="background-color:#EEF;">}</li>
-      <li style="background-color:#EFF;">#nob_tree {</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;left: -25px;</li>
-      <li style="background-color:#EFF;">}</li>
-      <li style="background-color:#EEF;">#nob_content {</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;left: 6px;</li>
-      <li style="background-color:#EEF;">}</li>
-      <li style="background-color:#EFF;">#nob_content::before, #nob_tree::before {</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;content: attr(sign);</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;font-size: 32px;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;font-weight: bold;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;text-align: center;</li>
-      <li style="background-color:#EEF;">}</li>
-      <li style="background-color:#EFF;">#content_pane {</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;flex: 3 1 auto;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;background:  #12131f;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;animation: content_fadeIn 1s;</li>
-      <li style="background-color:#EFF;">}</li>
-      <li style="background-color:#EEF;">.viewport {</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;display: flex;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;justify-content: center;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;align-items: center;</li>
-      <li style="background-color:#EEF;">}</li>
-      <li style="background-color:#EFF;">.viewport iframe {</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;width: 99%;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;height: 99%;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;background: #ccc;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;border-radius: 0 8px 8px 0;</li>
-      <li style="background-color:#EEF;">}</li>
-      <li style="background-color:#EFF;"></li>
-      <li style="background-color:#EEF;">/* hover */</li>
-      <li style="background-color:#EFF;">.bar:hover {</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;cursor: pointer;</li>
-      <li style="background-color:#EFF;">}</li>
-      <li style="background-color:#EEF;">#bar_content:hover &gt; #nob_content, #nob_content:hover,</li>
-      <li style="background-color:#EFF;">#bar_tree:hover &gt; #nob_tree, #nob_tree:hover {</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;display: block;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;animation: fadeIn 1s;</li>
-      <li style="background-color:#EEF;">}</li>
-      <li style="background-color:#EFF;"></li>
-      <li style="background-color:#EEF;">@keyframes fadeIn {</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;0% {</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;display: none;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;opacity: 0;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;}</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;1% {</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;display: block;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;opacity: 0;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;}</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;100% {</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;display: block;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;}</li>
-      <li style="background-color:#EEF;">}</li>
-      <li style="background-color:#EFF;">@keyframes tree_fadeIn {</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;0% {</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;display: none;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;}</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;1% {</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;display: flex;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;flex-grow: 0;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;opacity: .5;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;}</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;100% {</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;display: flex;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;flex-grow: 1;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;opacity: 1;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;}</li>
-      <li style="background-color:#EFF;">}</li>
-      <li style="background-color:#EEF;">@keyframes content_fadeIn {</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;0% {</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;display: none;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;}</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;1% {</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;display: flex;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;flex-grow: 1;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;opacity: .5;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;}</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;100% {</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;display: flex;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;&nbsp;&nbsp;flex-grow: 3;</li>
-      <li style="background-color:#EEF;">&nbsp;&nbsp;&nbsp;&nbsp;opacity: 1;</li>
-      <li style="background-color:#EFF;">&nbsp;&nbsp;}</li>
-      <li style="background-color:#EEF;">}</li>
-      <li style="background-color:#EFF;"></li>
+      <ol>
+      <li>* {</li>
+      <li>&nbsp;&nbsp;margin: 0;</li>
+      <li>&nbsp;&nbsp;padding: 0;</li>
+      <li>}</li>
+      <li>body {</li>
+      <li>&nbsp;&nbsp;display: flex;</li>
+      <li>&nbsp;&nbsp;flex-direction: column;</li>
+      <li>&nbsp;&nbsp;justify-content: space-between;</li>
+      <li>}</li>
+      <li>header, footer {</li>
+      <li>&nbsp;&nbsp;flex: 0 0 auto;</li>
+      <li>&nbsp;&nbsp;height: 40px;</li>
+      <li>&nbsp;&nbsp;background: #373533;</li>
+      <li>&nbsp;&nbsp;color: silver;</li>
+      <li>&nbsp;&nbsp;text-align: center;</li>
+      <li></li>
+      <li>&nbsp;&nbsp;display: flex;</li>
+      <li id="howto_center_of_parent">&nbsp;&nbsp;justify-content: center;</li>
+      <li>&nbsp;&nbsp;align-items: center;</li>
+      <li>}</li>
+      <li>#main {</li>
+      <li>&nbsp;&nbsp;flex: 1 0 auto;</li>
+      <li id="howto_calc">&nbsp;&nbsp;height: calc(100vh - 80px);</li>
+      <li></li>
+      <li>&nbsp;&nbsp;/* flex for [tree_pane, content_pane] */</li>
+      <li>&nbsp;&nbsp;display: flex;</li>
+      <li>&nbsp;&nbsp;flex-direction: row-reverse;</li>
+      <li>}</li>
+      <li>#tool_pane {</li>
+      <li>&nbsp;&nbsp;flex: 0 0 auto;</li>
+      <li>&nbsp;&nbsp;width: 30px;</li>
+      <li>&nbsp;&nbsp;background: #3d3c39;</li>
+      <li>&nbsp;&nbsp;position: relative;</li>
+      <li id="howto_z_index">&nbsp;&nbsp;z-index: 10;</li>
+      <li>}</li>
+      <li>#tree_pane {</li>
+      <li>&nbsp;&nbsp;flex: 1 0 auto;</li>
+      <li>&nbsp;&nbsp;min-width: 200px;</li>
+      <li id="howto_vw_vh">&nbsp;&nbsp;width: 20vw;</li>
+      <li>&nbsp;&nbsp;background:  #c9472c;</li>
+      <li>&nbsp;&nbsp;animation: tree_fadeIn 1s;</li>
+      <li>}</li>
+      <li>.bar {</li>
+      <li>&nbsp;&nbsp;flex: 0 0 auto;</li>
+      <li>&nbsp;&nbsp;min-width: 6px;</li>
+      <li>&nbsp;&nbsp;max-width: 6px;</li>
+      <li>&nbsp;&nbsp;background: silver;</li>
+      <li>}</li>
+      <li>#bar_tree {</li>
+      <li>&nbsp;&nbsp;background: #12131f;</li>
+      <li>&nbsp;&nbsp;border-right: 1px solid #12131f;</li>
+      <li>}</li>
+      <li>#bar_content {</li>
+      <li>&nbsp;&nbsp;background:  #c9472c;</li>
+      <li>}</li>
+      <li>.nob {</li>
+      <li>&nbsp;&nbsp;display: none;</li>
+      <li>&nbsp;&nbsp;background: black;</li>
+      <li>&nbsp;&nbsp;color: silver;</li>
+      <li>&nbsp;&nbsp;width: 25px;</li>
+      <li>&nbsp;&nbsp;height: 40px;</li>
+      <li>&nbsp;&nbsp;top: 45%;</li>
+      <li>&nbsp;&nbsp;opacity: .6;</li>
+      <li>&nbsp;&nbsp;position: relative;</li>
+      <li>&nbsp;&nbsp;z-index: 1;</li>
+      <li>}</li>
+      <li>#nob_tree {</li>
+      <li>&nbsp;&nbsp;left: -25px;</li>
+      <li>}</li>
+      <li>#nob_content {</li>
+      <li>&nbsp;&nbsp;left: 6px;</li>
+      <li>}</li>
+      <li>#nob_content::before, #nob_tree::before {</li>
+      <li id="howto_attr">&nbsp;&nbsp;content: attr(sign);</li>
+      <li>&nbsp;&nbsp;font-size: 32px;</li>
+      <li>&nbsp;&nbsp;font-weight: bold;</li>
+      <li>&nbsp;&nbsp;text-align: center;</li>
+      <li>}</li>
+      <li>#content_pane {</li>
+      <li>&nbsp;&nbsp;flex: 3 1 auto;</li>
+      <li>&nbsp;&nbsp;background:  #12131f;</li>
+      <li>&nbsp;&nbsp;animation: content_fadeIn 1s;</li>
+      <li>}</li>
+      <li>.viewport {</li>
+      <li>&nbsp;&nbsp;display: flex;</li>
+      <li>&nbsp;&nbsp;justify-content: center;</li>
+      <li>&nbsp;&nbsp;align-items: center;</li>
+      <li>}</li>
+      <li>.viewport iframe {</li>
+      <li>&nbsp;&nbsp;width: 99%;</li>
+      <li>&nbsp;&nbsp;height: 99%;</li>
+      <li>&nbsp;&nbsp;background: #ccc;</li>
+      <li>&nbsp;&nbsp;border-radius: 0 8px 8px 0;</li>
+      <li>}</li>
+      <li></li>
+      <li>/* hover */</li>
+      <li>.bar:hover {</li>
+      <li>&nbsp;&nbsp;cursor: pointer;</li>
+      <li>}</li>
+      <li>#bar_content:hover &gt; #nob_content, #nob_content:hover,</li>
+      <li>#bar_tree:hover &gt; #nob_tree, #nob_tree:hover {</li>
+      <li>&nbsp;&nbsp;display: block;</li>
+      <li>&nbsp;&nbsp;animation: fadeIn 1s;</li>
+      <li>}</li>
+      <li></li>
+      <li>@keyframes fadeIn {</li>
+      <li>&nbsp;&nbsp;0% {</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;display: none;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;opacity: 0;</li>
+      <li>&nbsp;&nbsp;}</li>
+      <li>&nbsp;&nbsp;1% {</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;display: block;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;opacity: 0;</li>
+      <li>&nbsp;&nbsp;}</li>
+      <li>&nbsp;&nbsp;100% {</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;display: block;</li>
+      <li>&nbsp;&nbsp;}</li>
+      <li>}</li>
+      <li>@keyframes tree_fadeIn {</li>
+      <li>&nbsp;&nbsp;0% {</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;display: none;</li>
+      <li>&nbsp;&nbsp;}</li>
+      <li>&nbsp;&nbsp;1% {</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;display: flex;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;flex-grow: 0;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;opacity: .5;</li>
+      <li>&nbsp;&nbsp;}</li>
+      <li>&nbsp;&nbsp;100% {</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;display: flex;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;flex-grow: 1;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;opacity: 1;</li>
+      <li>&nbsp;&nbsp;}</li>
+      <li>}</li>
+      <li id="howto_anime_for_flex">@keyframes content_fadeIn {</li>
+      <li>&nbsp;&nbsp;0% {</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;display: none;</li>
+      <li>&nbsp;&nbsp;}</li>
+      <li>&nbsp;&nbsp;1% {</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;display: flex;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;flex-grow: 1;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;opacity: .5;</li>
+      <li>&nbsp;&nbsp;}</li>
+      <li>&nbsp;&nbsp;100% {</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;display: flex;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;flex-grow: 3;</li>
+      <li>&nbsp;&nbsp;&nbsp;&nbsp;opacity: 1;</li>
+      <li>&nbsp;&nbsp;}</li>
+      <li>}</li>
+      <li></li>
       </ol></code>
     </div>
   </body>

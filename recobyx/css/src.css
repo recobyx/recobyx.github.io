@@ -1,0 +1,16 @@
+ol {
+  list-style: decimal-leading-zero outside;
+  margin: 0;
+  padding-left: 36px;
+  background: #EEF;
+  color: #000;
+}
+li:nth-child(odd) {
+  background: #EFF;
+}
+li:nth-child(even) {
+  background: #EEF;
+}
+.highlight {
+  border: 1px solid lime;
+}
